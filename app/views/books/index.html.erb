@@ -1,0 +1,8 @@
+<h1>Book List</h1>
+
+<p id="notice"><%= notice %> </p>
+
+	<% @books.each do |b| %>
+		<div>This book is called <%=b.title%>, and is written by <%=b.author%> in <%=b.year%>.</div><br />
+
+	<% end %>
